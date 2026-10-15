@@ -1,5 +1,6 @@
 
 import requests
+import json
 from datetime import datetime, timezone
 
 SPOT = 'https://data-api.binance.vision'
@@ -66,6 +67,11 @@ def scan_market(name, base, prefix):
 
 
 def main():
+        with open("radar.json", "w", encoding="utf-8") as f:
+        json.dump({
+            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "candidates": []
+        }, f, ensure_ascii=False, indent=2)
     print('KRIPTO RADAR 2.0 -', datetime.now(timezone.utc).isoformat())
     print('UYARI: Seed/Monitoring ve delist etiketleri dogrulanmadi; alim sinyali degildir.')
     for name, base, prefix in [('Spot', SPOT, '/api/v3')]:
