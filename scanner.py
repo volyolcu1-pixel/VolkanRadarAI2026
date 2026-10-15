@@ -68,8 +68,7 @@ def scan_market(name, base, prefix):
 def main():
     print('KRIPTO RADAR 2.0 -', datetime.now(timezone.utc).isoformat())
     print('UYARI: Seed/Monitoring ve delist etiketleri dogrulanmadi; alim sinyali degildir.')
-    for name, base, prefix in [('Spot', SPOT, '/api/v3'),
-                               ('Futures', FUTURES, '/fapi/v1')]:
+    for name, base, prefix in [('Spot', SPOT, '/api/v3')]:
         try:
             scan_market(name, base, prefix)
         except (requests.RequestException, ValueError, KeyError) as exc:
