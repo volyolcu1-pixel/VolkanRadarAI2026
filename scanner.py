@@ -60,12 +60,13 @@ def scan_market(name, base, prefix):
         except (requests.RequestException, ValueError, KeyError, IndexError) as exc:
             print(f'Atlandi: {name} {symbol}: {exc}')
     matches.sort(key=lambda x: (-x[2], abs(x[3])))
+    
     print(f'\n{name}: {len(matches)} teknik aday (ilk 60 likit parite tarandi)')
     for symbol, width, ratio, distance, volume in matches[:15]:
         print(f'{symbol} | 24s aralik %{width:.1f} | hacim oranı {ratio:.1f}x '
               f'| dirence uzaklik %{distance:.1f} | 24s hacim {volume:,.0f} USDT')
 
-
+        return matches
 def main():
         with open("radar.json", "w", encoding="utf-8") as f:
         json.dump({
