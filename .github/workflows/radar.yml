@@ -4,9 +4,11 @@ name: Volkan Kripto Radar
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: '0 */6 * * *'
+
 permissions:
   contents: write
+
 jobs:
   scan:
     runs-on: ubuntu-latest
@@ -18,26 +20,28 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install requirements
         run: pip install -r requirements.txt
 
       - name: Run scanner
         run: python scanner.py
-        
+
       - name: Save radar results
         uses: actions/upload-artifact@v4
         with:
           name: radar-results
           path: radar.json
-          retention-days: 7  
-       - name: Publish radar data
-       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add -f radar.json
-        if ! git diff --cached --quiet; then
-          git commit -m "Update radar data"
-          git push
-        fi   
+          retention-days: 7
+
+      - name: Publish radar data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f radar.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update radar data"
+            git push
+          fi
+
