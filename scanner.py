@@ -11,7 +11,8 @@ SESSION.headers.update({'User-Agent': 'KriptoRadar/2.0'})
 def get_json(base, path, params=None):
     r = SESSION.get(base + path, params=params, timeout=20)
     r.raise_for_status()
-    return r.json()
+print(f"API yanıtı: {r.status_code} - {r.text[:200]}")
+return r.json()
 
 
 def scan_market(name, base, prefix):
