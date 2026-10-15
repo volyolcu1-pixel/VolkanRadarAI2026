@@ -2,7 +2,7 @@
 import requests
 from datetime import datetime, timezone
 
-SPOT = https://data-api.binance.vision/api/v3/ticker/24hr
+SPOT = 'https://api.binance.com'
 FUTURES = 'https://fapi.binance.com'
 SESSION = requests.Session()
 SESSION.headers.update({'User-Agent': 'KriptoRadar/2.0'})
