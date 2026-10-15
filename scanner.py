@@ -1,7 +1,7 @@
 
 import requests
 
-url = "https://api.binance.com/api/v3/ticker/24hr"
+https://data-api.binance.vision/api/v3/ticker/24hr
 
 try:
     response = requests.get(url, timeout=15)
