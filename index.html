@@ -1,34 +1,63 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><meta name="description" content="Volkan Kripto Radar teknik tarama ve uyarı paneli"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml"><title>Volkan Kripto Radar</title>
-<style>:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif}*{box-sizing:border-box}body{margin:0;background:#0b1120;color:#f8fafc}main{max-width:760px;margin:auto;padding:24px 18px}header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}h1{font-size:1.5rem;margin:0}h2{margin:0 0 16px;font-size:1.35rem}.muted,small{color:#94a3b8}.card{background:#172338;border:1px solid #293b56;border-radius:18px;padding:20px;margin-top:18px}button{background:#38bdf8;color:#082f49;border:0;border-radius:10px;padding:12px 17px;font-weight:700;cursor:pointer}button:focus-visible{outline:3px solid white}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.stat,.coin,.alert{background:#101b2e;border:1px solid #334761;border-radius:16px;padding:16px}.stat strong{display:block;font-size:1.5rem;margin-top:7px}.coin,.alert{margin-top:12px}.coinhead{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.symbol{font-size:1.25rem;font-weight:750;overflow-wrap:anywhere}.pill{background:#183e50;color:#7dd3fc;padding:6px 12px;border-radius:30px;font-size:.8rem}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}.metric span{display:block;color:#94a3b8;font-size:.84rem}.metric strong{display:block;font-size:1.12rem;margin-top:5px;overflow-wrap:anywhere}.risk{color:#fbbf24;font-size:.85rem;margin-top:20px}.alert{border-left:4px solid #fbbf24}.alert.critical{border-left-color:#fb7185}.alert.info{border-left-color:#38bdf8}.alert strong{display:block;margin-bottom:6px}.alert p{margin:0;color:#cbd5e1;font-size:.9rem;line-height:1.5}p{line-height:1.6}code{overflow-wrap:anywhere}@media(max-width:400px){main{padding:18px 12px}.card{padding:16px}.metrics{gap:12px}.metric strong{font-size:1rem}}</style></head>
-<body><main><header><div><h1>📡 Volkan Kripto Radar</h1><div class="muted">Spot taraması • Teknik aday ve uyarı paneli</div></div><button id="refresh" type="button">Yenile</button></header>
-<section class="card"><strong id="status" role="status">Veri kontrol ediliyor…</strong><p class="muted" id="updated"></p><div class="stats"><div class="stat"><small>Teknik aday</small><strong id="count">—</strong></div><div class="stat"><small>Tarama durumu</small><strong id="scanstatus">Bekleniyor</strong></div></div><p class="muted">Teknik adaylar alım sinyali değildir. Seed/Monitoring ve delist riskleri henüz doğrulanmamaktadır.</p></section>
-<section class="card"><h2>🔔 Radar Alarmları</h2><div id="alerts" aria-live="polite"><p class="muted">Uyarılar yükleniyor…</p></div><small>Bu uyarılar yalnızca son yayımlanan tarama dosyasından hesaplanır. Canlı fiyat veya telefon bildirimi değildir.</small></section>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827"><title>Volkan Kripto Radar</title>
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;background:#0b1120;color:#f8fafc}
+main{max-width:760px;margin:auto;padding:24px 18px}header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+h1{font-size:1.5rem;margin:0}h2{font-size:1.25rem;margin:0 0 14px}.muted,small{color:#94a3b8}
+.card{background:#172338;border:1px solid #293b56;border-radius:18px;padding:20px;margin-top:18px}
+button{background:#38bdf8;color:#082f49;border:0;border-radius:10px;padding:12px 17px;font-weight:700;cursor:pointer}
+button:disabled{opacity:.55}.stats,.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.stat,.coin,.alert{background:#101b2e;border:1px solid #334761;border-radius:15px;padding:15px;margin-top:12px}
+.stat strong{display:block;font-size:1.5rem}.coinhead{display:flex;justify-content:space-between;gap:8px}
+.symbol{font-size:1.2rem;font-weight:750}.pill{color:#7dd3fc}.metric{margin-top:12px}
+.metric span{display:block;color:#94a3b8;font-size:.84rem}.metric strong{overflow-wrap:anywhere}
+.alert{border-left:4px solid #fbbf24}.alert.critical{border-left-color:#fb7185}.alert.info{border-left-color:#38bdf8}
+.alert strong{display:block}.alert p{margin-bottom:0}.risk{color:#fbbf24;margin-top:12px;font-size:.85rem}
+</style></head>
+<body><main><header><div><h1>📡 Volkan Kripto Radar</h1><div class="muted">Spot ve Futures • Teknik aday ve uyarı paneli</div></div><button id="refresh">Yenile</button></header>
+<section class="card"><strong id="status">Veri kontrol ediliyor…</strong><p id="updated" class="muted"></p><div class="stats"><div class="stat"><small>Teknik aday</small><strong id="count">—</strong></div><div class="stat"><small>Tarama durumu</small><strong id="scanstatus">Bekleniyor</strong></div></div><p class="muted">Seed/Monitoring ve delist riskleri henüz doğrulanmamaktadır. Teknik adaylar alım sinyali değildir.</p></section>
+<section class="card"><h2>🔔 Radar Alarmları</h2><div id="alerts"></div><small>Bu panel yalnızca son yayımlanan radar.json dosyasından hesaplanır.</small></section>
 <section class="card"><h2>Tarama sonuçları</h2><div id="results"><p class="muted">Bekleniyor…</p></div></section>
-<section class="card"><h2>Veri kaynağı</h2><p class="muted">Panel, GitHub Pages üzerinde yayımlanan <code>radar.json</code> dosyasını okur. Yenile düğmesi yeni borsa taraması başlatmaz; son yayımlanan sonuçları getirir. Futures API erişimi ve telefon bildirimleri henüz çalışmamaktadır.</p></section></main>
+<section class="card"><h2>📲 Telefon bildirimleri</h2><button id="enable-push" type="button">Bildirimleri etkinleştir</button><p id="push-status" class="muted">Telefon bildirim izni henüz alınmadı. Otomatik bildirim gönderimi henüz bağlı değil.</p></section>
+<section class="card"><h2>Veri kaynağı</h2><p class="muted">Panel GitHub Pages'teki radar.json dosyasını okur. Yenile düğmesi yeni borsa taraması başlatmaz. Futures erişimi bölgesel olarak kısıtlanabilir.</p></section>
+</main>
 <script>
 'use strict';
 const $=id=>document.getElementById(id);
-const number=(v)=>{const n=Number(v);return Number.isFinite(n)?n:null};
-const fmt=(v,d=2)=>v===null?'—':v.toLocaleString('tr-TR',{minimumFractionDigits:d,maximumFractionDigits:d});
-function node(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=String(txt);return e}
-function alertItem(kind,title,description){const el=node('div','alert '+kind);el.append(node('strong','',title),node('p','',description));$('alerts').append(el)}
-function render(data){const rows=Array.isArray(data?.candidates)?data.candidates:[];$('results').replaceChildren();$('alerts').replaceChildren();$('count').textContent=rows.length;
-const status=String(data?.status||'bilinmiyor').toLowerCase();$('scanstatus').textContent=status==='ok'?'Başarılı':status==='partial'?'Kısmi':status==='error'?'Hata':'Kontrol et';
-const timestamp=Date.parse(data?.updated_at||'');const age=Number.isFinite(timestamp)?Date.now()-timestamp:null;
-$('updated').textContent='Son tarama: '+(Number.isFinite(timestamp)?new Date(timestamp).toLocaleString('tr-TR'):'Zaman bilinmiyor')+' • Ekran yenileme: '+new Date().toLocaleString('tr-TR');
-if(age!==null&&age>8*3600000)alertItem('critical','Eski tarama verisi','Son tarama 8 saatten daha eski. Bu sonuçlar güncel kabul edilmemeli.');
-if(status!=='ok')alertItem('critical','Tarama tam başarılı değil','Durum: '+status+'. Bazı piyasalardan veri alınamamış olabilir.');
-const errors=Array.isArray(data?.errors)?data.errors:[];for(const err of errors.slice(0,5))alertItem('critical','Veri kaynağı hatası',String(err));
-if(!rows.length){$('results').append(node('p','muted','Bu taramada teknik aday bulunamadı.'));if(!$('alerts').children.length)alertItem('info','Yeni teknik uyarı yok','Son taramada koşulları sağlayan aday bulunamadı.');return}
-for(const r of rows){if(!r||typeof r!=='object')continue;const symbol=String(r.symbol||'Bilinmeyen').slice(0,50),market=String(r.market||'Bilinmiyor');const ratio=number(r.volume_ratio),width=number(r.width_pct),distance=number(r.distance_to_resistance_pct),volume=number(r.volume_usdt_24h);
-const coin=node('article','coin'),head=node('div','coinhead');head.append(node('div','symbol',symbol),node('span','pill',market));coin.append(head);const metrics=node('div','metrics');for(const [label,value] of [['Hacim oranı',ratio===null?'—':fmt(ratio)+'x'],['24 saatlik fiyat aralığı',width===null?'—':fmt(width)+'%'],['Dirence uzaklık',distance===null?'—':fmt(distance)+'%'],['24 saatlik hacim',volume===null?'—':fmt(volume,0)+' USDT']]){const m=node('div','metric');m.append(node('span','',label),node('strong','',value));metrics.append(m)}coin.append(metrics,node('div','risk','⚠ Seed/Monitoring/delist kontrol edilmedi'));$('results').append(coin);
-if(ratio!==null&&ratio>=3)alertItem('info',symbol+' • Yüksek hacim oranı',fmt(ratio)+'x hacim oranı hesaplandı. Bu, tek başına balina hareketi veya alım sinyali değildir.');
-if(distance!==null&&distance>=0&&distance<=0.5)alertItem('info',symbol+' • Dirence yakın','Hesaplanan dirence uzaklık '+fmt(distance)+'%. Kırılım doğrulanmadı.');
-if(distance!==null&&distance<0&&distance>=-1.5)alertItem('info',symbol+' • Direnç üzerinde','Son kapanış hesaplanan direnç üzerinde (%'+fmt(Math.abs(distance))+'). Kalıcı kırılım doğrulanmadı.');
+const fmt=(v,d=2)=>Number.isFinite(Number(v))?Number(v).toLocaleString('tr-TR',{maximumFractionDigits:d}):'—';
+function node(tag,cls,text){const el=document.createElement(tag);el.className=cls||'';if(text!==undefined)el.textContent=String(text);return el}
+function alarm(type,title,desc){const a=node('div','alert '+type);a.append(node('strong','',title),node('p','',desc));$('alerts').append(a)}
+function render(data){
+ const rows=Array.isArray(data?.candidates)?data.candidates:[];$('results').replaceChildren();$('alerts').replaceChildren();$('count').textContent=rows.length;
+ const status=String(data?.status||'bilinmiyor').toLowerCase();$('scanstatus').textContent=status==='ok'?'Başarılı':status==='partial'?'Kısmi':status==='error'?'Hata':'Kontrol et';
+ const timestamp=Date.parse(data?.updated_at||'');$('updated').textContent='Son tarama: '+(Number.isFinite(timestamp)?new Date(timestamp).toLocaleString('tr-TR'):'Bilinmiyor');
+ if(Number.isFinite(timestamp)&&Date.now()-timestamp>8*3600000)alarm('critical','Eski tarama verisi','Son tarama 8 saatten daha eski.');
+ if(status!=='ok')alarm('critical','Tarama tam başarılı değil','Durum: '+status);
+ for(const err of (Array.isArray(data?.errors)?data.errors:[]).slice(0,5))alarm('critical','Veri kaynağı hatası',String(err));
+ for(const r of rows){
+  if(!r||typeof r!=='object')continue;
+  const sym=String(r.symbol||'Bilinmeyen').slice(0,50),coin=node('article','coin'),head=node('div','coinhead');
+  head.append(node('div','symbol',sym),node('span','pill',String(r.market||'')));coin.append(head);
+  const metrics=node('div','metrics');
+  for(const [label,value] of [['Hacim oranı',fmt(r.volume_ratio)+'x'],['24 saatlik fiyat aralığı',fmt(r.width_pct)+'%'],['Dirence uzaklık',fmt(r.distance_to_resistance_pct)+'%'],['24 saatlik hacim',fmt(r.volume_usdt_24h,0)+' USDT']]){
+   const m=node('div','metric');m.append(node('span','',label),node('strong','',value));metrics.append(m)
+  }
+  coin.append(metrics,node('div','risk','⚠ Seed/Monitoring/delist kontrol edilmedi'));$('results').append(coin);
+  const ratio=Number(r.volume_ratio),dist=Number(r.distance_to_resistance_pct);
+  if(Number.isFinite(ratio)&&ratio>=3)alarm('info',sym+' • Yüksek hacim',fmt(ratio)+'x hacim oranı; tek başına alım sinyali değildir.');
+  if(Number.isFinite(dist)&&dist>=0&&dist<=.5)alarm('info',sym+' • Dirence yakın','Uzaklık '+fmt(dist)+'%');
+  if(Number.isFinite(dist)&&dist<0&&dist>=-1.5)alarm('info',sym+' • Direnç üzerinde','Kalıcı kırılım doğrulanmadı.');
+ }
+ if(!rows.length)$('results').append(node('p','muted','Bu taramada teknik aday bulunamadı.'));
+ if(!$('alerts').children.length)alarm('info','Özel teknik uyarı yok','Yeni eşik aşımı yok.');
 }
-if(!$('alerts').children.length)alertItem('info','Özel teknik uyarı yok','Adaylar listeleniyor ancak ek alarm eşikleri aşılmadı.');
+async function load(){
+ $('status').textContent='Sonuçlar yükleniyor…';
+ try{const res=await fetch('./radar.json?t='+Date.now(),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);render(await res.json());$('status').textContent='Sonuç dosyası yüklendi'}
+ catch(e){$('status').textContent='Veri yüklenemedi';$('scanstatus').textContent='Hata';$('alerts').replaceChildren();alarm('critical','Veri bağlantısı hatası',String(e.message))}
 }
-async function load(){ $('status').textContent='Sonuçlar yükleniyor…';try{const response=await fetch('radar.json?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw new Error('HTTP '+response.status);const data=await response.json();render(data);$('status').textContent='Sonuç dosyası yüklendi'}catch(e){$('status').textContent='Veri yüklenemedi';$('updated').textContent=String(e.message);$('scanstatus').textContent='Hata';$('alerts').replaceChildren();alertItem('critical','Veri bağlantısı hatası','radar.json yüklenemedi.');$('results').replaceChildren(node('p','muted','Sonuçlar alınamadı.'))}}
-$('refresh').addEventListener('click',load);load();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
-</script></body></html>
+$('refresh').addEventListener('click',load);load();
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script><script type="module" src="./firebase-push.js"></script></body></html>
