@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:20:07.942243+00:00",
+  "updated_at": "2026-10-16T06:29:57.113593+00:00",
   "status": "ok",
   "candidates": [
     {
@@ -8,7 +8,7 @@
       "width_pct": 5.532,
       "volume_ratio": 6.748,
       "distance_to_resistance_pct": -0.043,
-      "volume_usdt_24h": 8900777.77
+      "volume_usdt_24h": 8947925.45
     },
     {
       "market": "Spot",
@@ -16,7 +16,7 @@
       "width_pct": 0.05,
       "volume_ratio": 1.639,
       "distance_to_resistance_pct": 0.01,
-      "volume_usdt_24h": 45226059.77
+      "volume_usdt_24h": 45234349.52
     },
     {
       "market": "Spot",
@@ -24,7 +24,7 @@
       "width_pct": 0.07,
       "volume_ratio": 1.628,
       "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 9637830.35
+      "volume_usdt_24h": 9640510.65
     }
   ],
   "errors": []
