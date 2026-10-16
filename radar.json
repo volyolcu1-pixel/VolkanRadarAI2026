@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T07:32:08.647808+00:00",
+  "updated_at": "2026-10-16T07:37:08.834446+00:00",
   "status": "partial",
   "candidates": [],
   "errors": [
@@ -7,7 +7,18 @@
   ],
   "risk_filters_verified": false,
   "markets": {
-    "Spot": "ok",
-    "Futures": "error"
+    "Spot": {
+      "status": "partial",
+      "scanned": 79,
+      "candidates": 0,
+      "failed_symbols": 1,
+      "failure_details": [
+        "Spot RWUSDUSDT: yetersiz mum (72/73)"
+      ]
+    },
+    "Futures": {
+      "status": "error",
+      "message": "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
+    }
   }
 }
