@@ -1,23 +1,14 @@
 {
-  "updated_at": "2026-10-16T06:45:09.762543+00:00",
+  "updated_at": "2026-10-16T06:53:50.196505+00:00",
   "status": "ok",
   "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "TSLABUSDT",
-      "width_pct": 5.532,
-      "volume_ratio": 6.748,
-      "distance_to_resistance_pct": -0.043,
-      "volume_usdt_24h": 9153231.44,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
     {
       "market": "Spot",
       "symbol": "JSTUSDT",
       "width_pct": 4.946,
       "volume_ratio": 2.451,
       "distance_to_resistance_pct": 1.772,
-      "volume_usdt_24h": 5361132.23,
+      "volume_usdt_24h": 5380014.94,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
