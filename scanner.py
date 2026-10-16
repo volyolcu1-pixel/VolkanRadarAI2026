@@ -1,4 +1,4 @@
-"""Volkan Kripto Radar 3.2 - public market data, no trading orders."""
+"""Volkan Kripto Radar 3.3 - public market data, no trading orders."""
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -8,7 +8,7 @@ SPOT = 'https://data-api.binance.vision'
 FUTURES = 'https://fapi.binance.com'
 MARKETS = [('Spot', SPOT, '/api/v3'), ('Futures', FUTURES, '/fapi/v1')]
 SESSION = requests.Session()
-SESSION.headers.update({'User-Agent': 'VolkanKriptoRadar/3.2'})
+SESSION.headers.update({'User-Agent': 'VolkanKriptoRadar/3.3'})
 
 # Manual exclusions are not a substitute for live exchange risk-tag verification.
 EXCLUDED = {
@@ -52,6 +52,7 @@ def scan_market(name, base, prefix):
 
     results = []
     failed = 0
+    failures = []
     for ticker in liquid:
         symbol = ticker['symbol']
         try:
@@ -59,6 +60,9 @@ def scan_market(name, base, prefix):
                                {'symbol': symbol, 'interval': '1h', 'limit': 73})
             if len(candles) < 73:
                 failed += 1
+                message = f'{name} {symbol}: yetersiz mum ({len(candles)}/73)'
+                failures.append(message)
+                print('ATLANDI:', message)
                 continue
             closed = candles[:-1]
             recent, previous = closed[-24:], closed[-48:-24]
@@ -86,11 +90,13 @@ def scan_market(name, base, prefix):
         except (requests.RequestException, ValueError, KeyError,
                 IndexError, TypeError, ZeroDivisionError) as exc:
             failed += 1
-            print(f'Atlandi: {name} {symbol}: {exc}')
+            message = f'{name} {symbol}: {type(exc).__name__}: {exc}'
+            failures.append(message)
+            print('ATLANDI:', message)
     results.sort(key=lambda x: (-x['volume_ratio'],
                                 abs(x['distance_to_resistance_pct'])))
     print(f'{name}: {len(results)} aday, {len(liquid)} parite tarandi, {failed} hata')
-    return results
+    return results, len(liquid), failures
 
 
 def main():
@@ -103,19 +109,26 @@ def main():
     successes = 0
     for name, base, prefix in MARKETS:
         try:
-            found = scan_market(name, base, prefix)
+            found, scanned, failures = scan_market(name, base, prefix)
             report['candidates'].extend(found)
-            report['markets'][name] = 'ok'
+            report['markets'][name] = {
+                'status': 'partial' if failures else 'ok',
+                'scanned': scanned,
+                'candidates': len(found),
+                'failed_symbols': len(failures),
+                'failure_details': failures
+            }
             successes += 1
         except (requests.RequestException, ValueError, KeyError,
                 IndexError, TypeError, RuntimeError) as exc:
             message = f'{name} taramasi basarisiz: {exc}'
             print(message)
             report['errors'].append(message)
-            report['markets'][name] = 'error'
+            report['markets'][name] = {'status': 'error', 'message': message}
 
-    report['status'] = ('ok' if successes == len(MARKETS)
-                        else 'partial' if successes else 'error')
+    all_clean = (successes == len(MARKETS) and all(
+        m.get('status') == 'ok' for m in report['markets'].values()))
+    report['status'] = 'ok' if all_clean else 'partial' if successes else 'error'
     report['candidates'].sort(key=lambda c: (-c['volume_ratio'],
                                               abs(c['distance_to_resistance_pct'])))
     Path('radar.json').write_text(
