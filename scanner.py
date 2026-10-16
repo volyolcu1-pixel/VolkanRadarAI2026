@@ -1,110 +1,118 @@
 import json
 from datetime import datetime, timezone
-
 import requests
 
-SPOT = 'https://data-api.binance.vision'
+SPOT = "https://data-api.binance.vision"
 SESSION = requests.Session()
-SESSION.headers.update({'User-Agent': 'KriptoRadar/2.0'})
+SESSION.headers.update({"User-Agent": "KriptoRadar/2.1"})
 
+EXCLUDED = {
+    "USDT", "USDC", "FDUSD", "TUSD", "DAI", "BUSD",
+    "USDE", "USD1", "RLUSD", "BFUSD", "USDD", "PYUSD",
+    "EUR", "EURC", "EURI", "AEUR", "WBTC", "WBETH",
+    "BETH", "ETHFI", "USDP", "USTC", "LUSD"
+}
 
-def get_json(base, path, params=None):
-    response = SESSION.get(base + path, params=params, timeout=20)
-    response.raise_for_status()
-    return response.json()
+def get_json(path, params=None):
+    r = SESSION.get(SPOT + path, params=params, timeout=20)
+    r.raise_for_status()
+    return r.json()
 
+def scan():
+    exchange = get_json("/api/v3/exchangeInfo")
+    tickers = get_json("/api/v3/ticker/24hr")
 
-def scan_market(name, base, prefix):
-    tickers = get_json(base, prefix + '/ticker/24hr')
-    exchange = get_json(base, prefix + '/exchangeInfo')
-    active = {
-        s['symbol'] for s in exchange['symbols']
-        if s.get('status') == 'TRADING'
-        and s.get('quoteAsset') == 'USDT'
-        and s.get('baseAsset') not in {
-            'USDT', 'USDC', 'FDUSD', 'TUSD', 'DAI', 'BUSD', 'USDE', 'USD1'
-        }
-    }
+    active = set()
+    for s in exchange["symbols"]:
+        base = s.get("baseAsset", "")
+        if (
+            s.get("status") == "TRADING"
+            and s.get("quoteAsset") == "USDT"
+            and s.get("isSpotTradingAllowed", True)
+            and base not in EXCLUDED
+            and not base.endswith(("UP", "DOWN", "BULL", "BEAR"))
+        ):
+            active.add(s["symbol"])
+
     liquid = sorted(
         (
             t for t in tickers
-            if t['symbol'] in active
-            and float(t.get('quoteVolume', 0)) >= 5_000_000
-            and -10 <= float(t.get('priceChangePercent', 0)) <= 12
+            if t["symbol"] in active
+            and float(t.get("quoteVolume", 0)) >= 5000000
+            and -10 <= float(t.get("priceChangePercent", 0)) <= 12
         ),
-        key=lambda t: float(t['quoteVolume']),
+        key=lambda t: float(t["quoteVolume"]),
         reverse=True
-    )[:60]
+    )[:100]
 
-    matches = []
+    results = []
     for t in liquid:
-        symbol = t['symbol']
+        symbol = t["symbol"]
         try:
             candles = get_json(
-                base, prefix + '/klines',
-                {'symbol': symbol, 'interval': '1h', 'limit': 73}
+                "/api/v3/klines",
+                {"symbol": symbol, "interval": "1h", "limit": 73}
             )
             if len(candles) < 73:
                 continue
+
             closed = candles[:-1]
             recent = closed[-24:]
             previous = closed[-48:-24]
+
             highs = [float(c[2]) for c in recent]
             lows = [float(c[3]) for c in recent]
             closes = [float(c[4]) for c in recent]
-            volumes = [float(c[7]) for c in recent]
-            prev_volumes = [float(c[7]) for c in previous]
             price = closes[-1]
             resistance = max(highs[:-1])
+
             width = (max(highs) - min(lows)) / price * 100
-            vol_ratio = (sum(volumes[-3:]) / 3) / max(sum(prev_volumes) / 24, 1)
+            previous_vol = sum(float(c[7]) for c in previous) / 24
+            last3_vol = sum(float(c[7]) for c in recent[-3:]) / 3
+            ratio = last3_vol / max(previous_vol, 0.000001)
             distance = (resistance - price) / resistance * 100
-            if width <= 10 and vol_ratio >= 1.5 and -1.5 <= distance <= 2:
-                matches.append((symbol, width, vol_ratio, distance,
-                                float(t['quoteVolume'])))
-        except (requests.RequestException, ValueError, KeyError, IndexError, TypeError) as exc:
-            print(f'Atlandi: {name} {symbol}: {exc}')
 
-    matches.sort(key=lambda x: (-x[2], abs(x[3])))
-    print(f'\n{name}: {len(matches)} teknik aday (ilk 60 likit parite tarandi)')
-    for symbol, width, ratio, distance, volume in matches[:15]:
-        print(f'{symbol} | 24s aralik %{width:.1f} | hacim orani {ratio:.1f}x '
-              f'| dirence uzaklik %{distance:.1f} | 24s hacim {volume:,.0f} USDT')
-    return matches
+            if width <= 10 and ratio >= 1.5 and -1.5 <= distance <= 2:
+                results.append({
+                    "market": "Spot",
+                    "symbol": symbol,
+                    "width_pct": round(width, 3),
+                    "volume_ratio": round(ratio, 3),
+                    "distance_to_resistance_pct": round(distance, 3),
+                    "volume_usdt_24h": round(float(t["quoteVolume"]), 2),
+                    "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+                })
+        except (requests.RequestException, ValueError, KeyError,
+                IndexError, TypeError, ZeroDivisionError) as e:
+            print("Atlandi:", symbol, str(e))
 
+    results.sort(key=lambda x: (-x["volume_ratio"],
+                                abs(x["distance_to_resistance_pct"])))
+    return results
 
 def main():
-    now = datetime.now(timezone.utc).isoformat()
-    print('KRIPTO RADAR 2.0 -', now)
-    print('UYARI: Seed/Monitoring ve delist etiketleri dogrulanmadi; alim sinyali degildir.')
+    report = {
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+        "status": "error",
+        "candidates": [],
+        "errors": []
+    }
+    try:
+        report["candidates"] = scan()
+        report["status"] = "ok"
+    except (requests.RequestException, ValueError, KeyError, TypeError) as e:
+        report["errors"].append(str(e))
 
-    report = {'updated_at': now, 'status': 'error', 'candidates': [], 'errors': []}
-    for name, base, prefix in [('Spot', SPOT, '/api/v3')]:
-        try:
-            matches = scan_market(name, base, prefix)
-            report['candidates'].extend([
-                {
-                    'market': name,
-                    'symbol': symbol,
-                    'width_pct': round(width, 3),
-                    'volume_ratio': round(ratio, 3),
-                    'distance_to_resistance_pct': round(distance, 3),
-                    'volume_usdt_24h': round(volume, 2)
-                }
-                for symbol, width, ratio, distance, volume in matches
-            ])
-            report['status'] = 'ok'
-        except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
-            message = f'{name} taramasi basarisiz: {exc}'
-            print(message)
-            report['errors'].append(message)
-
-    with open('radar.json', 'w', encoding='utf-8') as f:
+    with open("radar.json", "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
-    print(f"radar.json yazildi: {len(report['candidates'])} aday")
-    if report['status'] != 'ok':
+
+    print("Tarama durumu:", report["status"])
+    print("Bulunan aday:", len(report["candidates"]))
+    for c in report["candidates"][:15]:
+        print(c["symbol"], "Hacim:", c["volume_ratio"], "x")
+
+    if report["status"] != "ok":
         raise SystemExit(1)
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
