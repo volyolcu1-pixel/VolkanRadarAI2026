@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:53:50.196505+00:00",
+  "updated_at": "2026-10-16T06:55:21.446959+00:00",
   "status": "ok",
   "candidates": [
     {
@@ -8,7 +8,7 @@
       "width_pct": 4.946,
       "volume_ratio": 2.451,
       "distance_to_resistance_pct": 1.772,
-      "volume_usdt_24h": 5380014.94,
+      "volume_usdt_24h": 5366562.14,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
