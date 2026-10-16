@@ -106,7 +106,8 @@ def main():
             message = f'{name} taramasi basarisiz: {exc}'
             print(message)
             report['errors'].append(message)
-    report['status'] = 'ok' if successes == len(MARKETS) else 'error'
+    report['status'] = ('ok' if successes == len(MARKETS) else
+                        'partial' if successes > 0 else 'error')
     report['candidates'].sort(key=lambda c: -c['volume_ratio'])
     with open('radar.json', 'w', encoding='utf-8') as file:
         json.dump(report, file, ensure_ascii=False, indent=2)
@@ -114,8 +115,11 @@ def main():
     print('Toplam aday:', len(report['candidates']))
     for c in report['candidates'][:15]:
         print(c['market'], c['symbol'], 'Hacim:', c['volume_ratio'], 'x')
-    if report['status'] != 'ok':
-        if report['candidates']:
-        print('UYARI: Kismi tarama basarili. Hatalar:', report['errors'])
-    else:
+    if report['errors']:
+        print('UYARI: Basarisiz piyasalar:', report['errors'])
+    if successes == 0:
         raise SystemExit(1)
+
+
+if __name__ == '__main__':
+    main()
