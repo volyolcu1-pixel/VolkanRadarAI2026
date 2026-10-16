@@ -115,8 +115,7 @@ def main():
     for c in report['candidates'][:15]:
         print(c['market'], c['symbol'], 'Hacim:', c['volume_ratio'], 'x')
     if report['status'] != 'ok':
+    if report['candidates']:
+        print('UYARI: Kismi tarama basarili. Hatalar:', report['errors'])
+    else:
         raise SystemExit(1)
-
-
-if __name__ == '__main__':
-    main()
