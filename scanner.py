@@ -7,7 +7,7 @@ SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": "KriptoRadar/2.1"})
 
 EXCLUDED = {
-   "TSLA", "TSLAB", "TSLAUSDT", 
+   "TSLA", "TSLAB",
     "USDT", "USDC", "FDUSD", "TUSD", "DAI", "BUSD",
     "USDE", "USD1", "RLUSD", "BFUSD", "USDD", "PYUSD",
     "EUR", "EURC", "EURI", "AEUR", "WBTC", "WBETH",
