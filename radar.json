@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-16T06:29:57.113593+00:00",
+  "updated_at": "2026-10-16T06:39:16.282727+00:00",
   "status": "ok",
   "candidates": [
     {
@@ -8,23 +8,17 @@
       "width_pct": 5.532,
       "volume_ratio": 6.748,
       "distance_to_resistance_pct": -0.043,
-      "volume_usdt_24h": 8947925.45
+      "volume_usdt_24h": 9025049.73,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "RLUSDUSDT",
-      "width_pct": 0.05,
-      "volume_ratio": 1.639,
-      "distance_to_resistance_pct": 0.01,
-      "volume_usdt_24h": 45234349.52
-    },
-    {
-      "market": "Spot",
-      "symbol": "BFUSDUSDT",
-      "width_pct": 0.07,
-      "volume_ratio": 1.628,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 9640510.65
+      "symbol": "JSTUSDT",
+      "width_pct": 4.946,
+      "volume_ratio": 2.451,
+      "distance_to_resistance_pct": 1.772,
+      "volume_usdt_24h": 5273829.67,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
   "errors": []
