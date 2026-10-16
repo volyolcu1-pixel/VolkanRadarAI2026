@@ -1,16 +1,19 @@
 {
-  "updated_at": "2026-10-16T06:55:21.446959+00:00",
-  "status": "ok",
+  "updated_at": "2026-10-16T07:28:16.403028+00:00",
+  "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "JSTUSDT",
-      "width_pct": 4.946,
-      "volume_ratio": 2.451,
-      "distance_to_resistance_pct": 1.772,
-      "volume_usdt_24h": 5366562.14,
+      "symbol": "XUSDUSDT",
+      "width_pct": 0.05,
+      "volume_ratio": 1.726,
+      "distance_to_resistance_pct": 0.02,
+      "volume_usdt_24h": 5728143.25,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
-  "errors": []
+  "errors": [
+    "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
+  ],
+  "risk_filters_verified": false
 }
