@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-10-17T00:30:05.595741+00:00",
+  "updated_at": "2026-10-17T06:26:45.729548+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 1.049,
-      "volume_ratio": 2.175,
-      "distance_to_resistance_pct": 0.738,
-      "volume_usdt_24h": 13497836.13,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -19,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 67,
-      "candidates": 1,
+      "scanned": 62,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
