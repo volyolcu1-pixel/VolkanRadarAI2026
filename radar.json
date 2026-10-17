@@ -1,7 +1,26 @@
 {
-  "updated_at": "2026-10-17T12:24:29.559837+00:00",
+  "updated_at": "2026-10-17T18:20:56.954007+00:00",
   "status": "partial",
-  "candidates": [],
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "ALTUSDT",
+      "width_pct": 9.455,
+      "volume_ratio": 4.772,
+      "distance_to_resistance_pct": -0.335,
+      "volume_usdt_24h": 6257900.58,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "ASTERUSDT",
+      "width_pct": 2.167,
+      "volume_ratio": 1.904,
+      "distance_to_resistance_pct": 1.392,
+      "volume_usdt_24h": 6958343.09,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -9,8 +28,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 60,
-      "candidates": 0,
+      "scanned": 58,
+      "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
     },
