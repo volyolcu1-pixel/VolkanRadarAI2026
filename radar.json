@@ -1,35 +1,7 @@
 {
-  "updated_at": "2026-10-18T00:29:16.750627+00:00",
+  "updated_at": "2026-10-18T06:26:29.944655+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "ASTERUSDT",
-      "width_pct": 3.272,
-      "volume_ratio": 2.338,
-      "distance_to_resistance_pct": 1.61,
-      "volume_usdt_24h": 8456590.36,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "DOGEUSDT",
-      "width_pct": 4.914,
-      "volume_ratio": 1.847,
-      "distance_to_resistance_pct": 1.94,
-      "volume_usdt_24h": 44853264.59,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "SPCXBUSDT",
-      "width_pct": 4.036,
-      "volume_ratio": 1.685,
-      "distance_to_resistance_pct": 0.725,
-      "volume_usdt_24h": 11399784.27,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -37,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 54,
-      "candidates": 3,
+      "scanned": 52,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
