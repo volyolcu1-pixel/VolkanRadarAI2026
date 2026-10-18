@@ -1,7 +1,26 @@
 {
-  "updated_at": "2026-10-18T06:26:29.944655+00:00",
+  "updated_at": "2026-10-18T12:24:35.484019+00:00",
   "status": "partial",
-  "candidates": [],
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "HBARUSDT",
+      "width_pct": 8.647,
+      "volume_ratio": 4.43,
+      "distance_to_resistance_pct": 0.281,
+      "volume_usdt_24h": 20130338.31,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "ASTERUSDT",
+      "width_pct": 3.531,
+      "volume_ratio": 2.271,
+      "distance_to_resistance_pct": 0.782,
+      "volume_usdt_24h": 13636170.27,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -9,8 +28,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 52,
-      "candidates": 0,
+      "scanned": 51,
+      "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
     },
