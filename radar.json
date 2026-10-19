@@ -1,122 +1,104 @@
 {
-  "updated_at": "2026-10-19T12:34:21.704903+00:00",
+  "updated_at": "2026-10-19T18:27:44.449681+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "TQQQBUSDT",
-      "width_pct": 6.921,
-      "volume_ratio": 6.944,
-      "distance_to_resistance_pct": 0.953,
-      "volume_usdt_24h": 15579972.11,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 0.971,
-      "volume_ratio": 6.255,
-      "distance_to_resistance_pct": 0.583,
-      "volume_usdt_24h": 11021484.49,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "MSTRBUSDT",
-      "width_pct": 5.294,
-      "volume_ratio": 5.48,
-      "distance_to_resistance_pct": 1.528,
-      "volume_usdt_24h": 14044121.29,
+      "symbol": "NVDABUSDT",
+      "width_pct": 3.894,
+      "volume_ratio": 7.364,
+      "distance_to_resistance_pct": 0.919,
+      "volume_usdt_24h": 7517784.98,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "SKHYBUSDT",
-      "width_pct": 8.063,
-      "volume_ratio": 2.943,
-      "distance_to_resistance_pct": 0.544,
-      "volume_usdt_24h": 9597639.75,
+      "width_pct": 9.968,
+      "volume_ratio": 6.434,
+      "distance_to_resistance_pct": 1.924,
+      "volume_usdt_24h": 12028204.72,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "TQQQBUSDT",
+      "width_pct": 8.466,
+      "volume_ratio": 3.053,
+      "distance_to_resistance_pct": 1.863,
+      "volume_usdt_24h": 16584504.07,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "BCHUSDT",
+      "width_pct": 6.087,
+      "volume_ratio": 2.916,
+      "distance_to_resistance_pct": 1.674,
+      "volume_usdt_24h": 8221512.91,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "PAXGUSDT",
+      "width_pct": 1.11,
+      "volume_ratio": 2.324,
+      "distance_to_resistance_pct": 0.906,
+      "volume_usdt_24h": 11774615.34,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "LTCUSDT",
+      "width_pct": 6.284,
+      "volume_ratio": 2.079,
+      "distance_to_resistance_pct": 1.29,
+      "volume_usdt_24h": 19796504.0,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "XAUTUSDT",
-      "width_pct": 1.003,
-      "volume_ratio": 2.661,
-      "distance_to_resistance_pct": 0.662,
-      "volume_usdt_24h": 16163990.92,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.03,
-      "volume_ratio": 2.454,
-      "distance_to_resistance_pct": 0.02,
-      "volume_usdt_24h": 17882436.03,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "CRCLBUSDT",
-      "width_pct": 5.994,
-      "volume_ratio": 2.038,
-      "distance_to_resistance_pct": 1.867,
-      "volume_usdt_24h": 13781315.07,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XRPUSDT",
-      "width_pct": 5.048,
-      "volume_ratio": 2.011,
-      "distance_to_resistance_pct": 1.399,
-      "volume_usdt_24h": 109901752.06,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "INTCBUSDT",
-      "width_pct": 8.201,
-      "volume_ratio": 1.958,
-      "distance_to_resistance_pct": 0.743,
-      "volume_usdt_24h": 18721552.39,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "SOLUSDT",
-      "width_pct": 5.531,
-      "volume_ratio": 1.728,
-      "distance_to_resistance_pct": 1.44,
-      "volume_usdt_24h": 186860501.12,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "PEPEUSDT",
-      "width_pct": 8.802,
-      "volume_ratio": 1.721,
-      "distance_to_resistance_pct": 0.969,
-      "volume_usdt_24h": 26775067.19,
+      "width_pct": 1.243,
+      "volume_ratio": 1.989,
+      "distance_to_resistance_pct": 1.044,
+      "volume_usdt_24h": 16232683.99,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "BTCUSDT",
-      "width_pct": 3.004,
-      "volume_ratio": 1.571,
-      "distance_to_resistance_pct": 0.963,
-      "volume_usdt_24h": 1113735231.87,
+      "width_pct": 3.019,
+      "volume_ratio": 1.708,
+      "distance_to_resistance_pct": 1.469,
+      "volume_usdt_24h": 1202326405.7,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "UNIUSDT",
-      "width_pct": 9.31,
-      "volume_ratio": 1.507,
-      "distance_to_resistance_pct": 1.962,
-      "volume_usdt_24h": 34661416.05,
+      "symbol": "QQQBUSDT",
+      "width_pct": 2.828,
+      "volume_ratio": 1.568,
+      "distance_to_resistance_pct": 0.679,
+      "volume_usdt_24h": 8726584.59,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "BNBUSDT",
+      "width_pct": 3.424,
+      "volume_ratio": 1.519,
+      "distance_to_resistance_pct": 0.524,
+      "volume_usdt_24h": 82901291.76,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "PEPEUSDT",
+      "width_pct": 9.976,
+      "volume_ratio": 1.501,
+      "distance_to_resistance_pct": 1.675,
+      "volume_usdt_24h": 30511787.37,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -127,8 +109,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 63,
-      "candidates": 13,
+      "scanned": 64,
+      "candidates": 11,
       "failed_symbols": 0,
       "failure_details": []
     },
