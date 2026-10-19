@@ -1,122 +1,122 @@
 {
-  "updated_at": "2026-10-19T06:35:55.273468+00:00",
+  "updated_at": "2026-10-19T12:34:21.704903+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "MSTRBUSDT",
-      "width_pct": 5.237,
-      "volume_ratio": 4.884,
-      "distance_to_resistance_pct": 0.453,
-      "volume_usdt_24h": 9733002.81,
+      "symbol": "TQQQBUSDT",
+      "width_pct": 6.921,
+      "volume_ratio": 6.944,
+      "distance_to_resistance_pct": 0.953,
+      "volume_usdt_24h": 15579972.11,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "TQQQBUSDT",
-      "width_pct": 6.699,
-      "volume_ratio": 4.346,
-      "distance_to_resistance_pct": -0.07,
-      "volume_usdt_24h": 12489274.3,
+      "symbol": "PAXGUSDT",
+      "width_pct": 0.971,
+      "volume_ratio": 6.255,
+      "distance_to_resistance_pct": 0.583,
+      "volume_usdt_24h": 11021484.49,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "MSTRBUSDT",
+      "width_pct": 5.294,
+      "volume_ratio": 5.48,
+      "distance_to_resistance_pct": 1.528,
+      "volume_usdt_24h": 14044121.29,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "SKHYBUSDT",
-      "width_pct": 6.535,
-      "volume_ratio": 3.598,
-      "distance_to_resistance_pct": 0.454,
-      "volume_usdt_24h": 7802496.54,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "INTCBUSDT",
-      "width_pct": 7.055,
-      "volume_ratio": 2.632,
-      "distance_to_resistance_pct": -0.097,
-      "volume_usdt_24h": 16704025.67,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UNIUSDT",
-      "width_pct": 8.334,
-      "volume_ratio": 2.39,
-      "distance_to_resistance_pct": 0.471,
-      "volume_usdt_24h": 30358135.98,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "SPCXBUSDT",
-      "width_pct": 4.423,
-      "volume_ratio": 1.979,
-      "distance_to_resistance_pct": 0.229,
-      "volume_usdt_24h": 27617872.78,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "QQQBUSDT",
-      "width_pct": 2.216,
-      "volume_ratio": 1.884,
-      "distance_to_resistance_pct": -0.031,
-      "volume_usdt_24h": 5552853.07,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "PEPEUSDT",
-      "width_pct": 7.862,
-      "volume_ratio": 1.882,
-      "distance_to_resistance_pct": 0.489,
-      "volume_usdt_24h": 23713129.33,
+      "width_pct": 8.063,
+      "volume_ratio": 2.943,
+      "distance_to_resistance_pct": 0.544,
+      "volume_usdt_24h": 9597639.75,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "XAUTUSDT",
-      "width_pct": 0.834,
-      "volume_ratio": 1.609,
-      "distance_to_resistance_pct": 0.053,
-      "volume_usdt_24h": 11610258.51,
+      "width_pct": 1.003,
+      "volume_ratio": 2.661,
+      "distance_to_resistance_pct": 0.662,
+      "volume_usdt_24h": 16163990.92,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "LTCUSDT",
-      "width_pct": 5.668,
-      "volume_ratio": 1.579,
-      "distance_to_resistance_pct": 0.083,
-      "volume_usdt_24h": 19626547.7,
+      "symbol": "UUSDT",
+      "width_pct": 0.03,
+      "volume_ratio": 2.454,
+      "distance_to_resistance_pct": 0.02,
+      "volume_usdt_24h": 17882436.03,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "CRCLBUSDT",
+      "width_pct": 5.994,
+      "volume_ratio": 2.038,
+      "distance_to_resistance_pct": 1.867,
+      "volume_usdt_24h": 13781315.07,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "XRPUSDT",
+      "width_pct": 5.048,
+      "volume_ratio": 2.011,
+      "distance_to_resistance_pct": 1.399,
+      "volume_usdt_24h": 109901752.06,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "INTCBUSDT",
+      "width_pct": 8.201,
+      "volume_ratio": 1.958,
+      "distance_to_resistance_pct": 0.743,
+      "volume_usdt_24h": 18721552.39,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "SOLUSDT",
+      "width_pct": 5.531,
+      "volume_ratio": 1.728,
+      "distance_to_resistance_pct": 1.44,
+      "volume_usdt_24h": 186860501.12,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "PEPEUSDT",
+      "width_pct": 8.802,
+      "volume_ratio": 1.721,
+      "distance_to_resistance_pct": 0.969,
+      "volume_usdt_24h": 26775067.19,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "BTCUSDT",
-      "width_pct": 2.656,
-      "volume_ratio": 1.569,
-      "distance_to_resistance_pct": 0.152,
-      "volume_usdt_24h": 964777448.33,
+      "width_pct": 3.004,
+      "volume_ratio": 1.571,
+      "distance_to_resistance_pct": 0.963,
+      "volume_usdt_24h": 1113735231.87,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "SNDKBUSDT",
-      "width_pct": 7.143,
-      "volume_ratio": 1.531,
-      "distance_to_resistance_pct": 0.172,
-      "volume_usdt_24h": 38860378.49,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "TRXUSDT",
-      "width_pct": 0.754,
-      "volume_ratio": 1.511,
-      "distance_to_resistance_pct": 0.659,
-      "volume_usdt_24h": 22892760.9,
+      "symbol": "UNIUSDT",
+      "width_pct": 9.31,
+      "volume_ratio": 1.507,
+      "distance_to_resistance_pct": 1.962,
+      "volume_usdt_24h": 34661416.05,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -127,7 +127,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 61,
+      "scanned": 63,
       "candidates": 13,
       "failed_symbols": 0,
       "failure_details": []
