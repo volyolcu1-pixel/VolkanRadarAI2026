@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-20T06:30:51.613704+00:00",
+  "updated_at": "2026-10-20T12:31:31.913681+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "NVDABUSDT",
-      "width_pct": 2.261,
-      "volume_ratio": 2.368,
-      "distance_to_resistance_pct": 1.397,
-      "volume_usdt_24h": 8666133.34,
+      "symbol": "XAUTUSDT",
+      "width_pct": 1.322,
+      "volume_ratio": 1.838,
+      "distance_to_resistance_pct": 1.045,
+      "volume_usdt_24h": 19696255.44,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.06,
-      "volume_ratio": 2.295,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 21133569.95,
+      "symbol": "NVDABUSDT",
+      "width_pct": 2.272,
+      "volume_ratio": 1.804,
+      "distance_to_resistance_pct": 1.856,
+      "volume_usdt_24h": 9223223.73,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,7 +28,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 63,
+      "scanned": 58,
       "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
