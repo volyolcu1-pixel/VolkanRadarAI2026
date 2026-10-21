@@ -1,41 +1,14 @@
 {
-  "updated_at": "2026-10-21T00:30:50.715974+00:00",
+  "updated_at": "2026-10-21T06:32:09.586386+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "HYPEUSDT",
-      "width_pct": 4.935,
-      "volume_ratio": 2.497,
-      "distance_to_resistance_pct": 1.723,
-      "volume_usdt_24h": 39333321.29,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "ETHUSDT",
-      "width_pct": 4.303,
-      "volume_ratio": 2.136,
-      "distance_to_resistance_pct": 1.162,
-      "volume_usdt_24h": 584882841.31,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "DASHUSDT",
-      "width_pct": 4.772,
-      "volume_ratio": 1.83,
-      "distance_to_resistance_pct": 1.54,
-      "volume_usdt_24h": 5600027.37,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 2.062,
-      "volume_ratio": 1.747,
-      "distance_to_resistance_pct": 1.851,
-      "volume_usdt_24h": 16780731.57,
+      "symbol": "SKHYBUSDT",
+      "width_pct": 8.63,
+      "volume_ratio": 1.778,
+      "distance_to_resistance_pct": 1.813,
+      "volume_usdt_24h": 9851045.58,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -47,7 +20,7 @@
     "Spot": {
       "status": "ok",
       "scanned": 67,
-      "candidates": 4,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
