@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-10-22T12:33:43.752802+00:00",
+  "updated_at": "2026-10-22T18:27:19.610102+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 2.002,
-      "volume_ratio": 7.972,
-      "distance_to_resistance_pct": 1.93,
-      "volume_usdt_24h": 47014492.28,
+      "symbol": "TRXUSDT",
+      "width_pct": 1.644,
+      "volume_ratio": 3.145,
+      "distance_to_resistance_pct": 1.381,
+      "volume_usdt_24h": 31176474.43,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 1.928,
-      "volume_ratio": 1.567,
-      "distance_to_resistance_pct": 1.871,
-      "volume_usdt_24h": 15182737.13,
+      "symbol": "UUSDT",
+      "width_pct": 0.06,
+      "volume_ratio": 2.416,
+      "distance_to_resistance_pct": 0.03,
+      "volume_usdt_24h": 32921840.44,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,7 +28,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 76,
+      "scanned": 60,
       "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
