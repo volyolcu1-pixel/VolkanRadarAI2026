@@ -1,41 +1,41 @@
 {
-  "updated_at": "2026-10-23T18:27:29.811164+00:00",
+  "updated_at": "2026-10-24T00:35:54.220781+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "TQQQBUSDT",
-      "width_pct": 3.484,
-      "volume_ratio": 9.61,
-      "distance_to_resistance_pct": 1.197,
-      "volume_usdt_24h": 14406989.05,
+      "symbol": "WLFIUSDT",
+      "width_pct": 3.882,
+      "volume_ratio": 1.888,
+      "distance_to_resistance_pct": 1.457,
+      "volume_usdt_24h": 5242632.05,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "QQQBUSDT",
-      "width_pct": 1.087,
-      "volume_ratio": 2.105,
-      "distance_to_resistance_pct": 0.379,
-      "volume_usdt_24h": 6284220.9,
+      "symbol": "BNBUSDT",
+      "width_pct": 2.758,
+      "volume_ratio": 1.616,
+      "distance_to_resistance_pct": 1.454,
+      "volume_usdt_24h": 106896427.55,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "ENAUSDT",
-      "width_pct": 7.696,
-      "volume_ratio": 1.555,
-      "distance_to_resistance_pct": -0.142,
-      "volume_usdt_24h": 33400712.02,
+      "symbol": "ICPUSDT",
+      "width_pct": 4.927,
+      "volume_ratio": 1.6,
+      "distance_to_resistance_pct": 1.792,
+      "volume_usdt_24h": 5656651.92,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "UUSDT",
       "width_pct": 0.05,
-      "volume_ratio": 1.51,
-      "distance_to_resistance_pct": 0.05,
-      "volume_usdt_24h": 37028432.71,
+      "volume_ratio": 1.534,
+      "distance_to_resistance_pct": 0.03,
+      "volume_usdt_24h": 43401167.78,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -46,7 +46,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 68,
+      "scanned": 66,
       "candidates": 4,
       "failed_symbols": 0,
       "failure_details": []
