@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T12:25:59.607148+00:00",
+  "updated_at": "2026-10-25T18:23:22.577123+00:00",
   "status": "partial",
   "candidates": [],
   "errors": [
@@ -9,7 +9,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 50,
+      "scanned": 44,
       "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
