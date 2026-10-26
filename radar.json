@@ -1,32 +1,14 @@
 {
-  "updated_at": "2026-10-26T00:37:37.339668+00:00",
+  "updated_at": "2026-10-26T06:36:45.147070+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "ONDOUSDT",
-      "width_pct": 3.998,
-      "volume_ratio": 2.194,
-      "distance_to_resistance_pct": 1.403,
-      "volume_usdt_24h": 7120934.15,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "SNDKBUSDT",
-      "width_pct": 2.82,
-      "volume_ratio": 1.99,
-      "distance_to_resistance_pct": 1.026,
-      "volume_usdt_24h": 9136848.89,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 0.511,
-      "volume_ratio": 1.7,
-      "distance_to_resistance_pct": 0.179,
-      "volume_usdt_24h": 20063723.26,
+      "symbol": "SPCXBUSDT",
+      "width_pct": 1.708,
+      "volume_ratio": 2.275,
+      "distance_to_resistance_pct": 0.615,
+      "volume_usdt_24h": 5663253.46,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -37,8 +19,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 44,
-      "candidates": 3,
+      "scanned": 46,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
