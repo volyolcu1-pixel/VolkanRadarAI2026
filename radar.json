@@ -1,23 +1,32 @@
 {
-  "updated_at": "2026-10-29T00:40:30.877378+00:00",
+  "updated_at": "2026-10-29T06:43:03.262811+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "AIUSDT",
-      "width_pct": 2.538,
-      "volume_ratio": 5.154,
-      "distance_to_resistance_pct": 1.005,
-      "volume_usdt_24h": 6284042.02,
+      "symbol": "UUSDT",
+      "width_pct": 0.07,
+      "volume_ratio": 4.605,
+      "distance_to_resistance_pct": 0.06,
+      "volume_usdt_24h": 36646080.26,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "INJUSDT",
-      "width_pct": 6.279,
-      "volume_ratio": 1.537,
-      "distance_to_resistance_pct": 0.257,
-      "volume_usdt_24h": 9190627.83,
+      "symbol": "AIUSDT",
+      "width_pct": 4.04,
+      "volume_ratio": 3.272,
+      "distance_to_resistance_pct": 1.98,
+      "volume_usdt_24h": 15572280.71,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "BNBUSDT",
+      "width_pct": 2.371,
+      "volume_ratio": 1.764,
+      "distance_to_resistance_pct": 0.943,
+      "volume_usdt_24h": 124898665.13,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,8 +37,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 64,
-      "candidates": 2,
+      "scanned": 67,
+      "candidates": 3,
       "failed_symbols": 0,
       "failure_details": []
     },
