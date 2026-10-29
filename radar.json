@@ -1,59 +1,23 @@
 {
-  "updated_at": "2026-10-28T18:38:32.657283+00:00",
+  "updated_at": "2026-10-29T00:40:30.877378+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "LTCUSDT",
-      "width_pct": 5.261,
-      "volume_ratio": 5.276,
-      "distance_to_resistance_pct": 1.696,
-      "volume_usdt_24h": 18663027.69,
+      "symbol": "AIUSDT",
+      "width_pct": 2.538,
+      "volume_ratio": 5.154,
+      "distance_to_resistance_pct": 1.005,
+      "volume_usdt_24h": 6284042.02,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "SNDKBUSDT",
-      "width_pct": 7.444,
-      "volume_ratio": 2.614,
-      "distance_to_resistance_pct": 0.444,
-      "volume_usdt_24h": 41737572.83,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XPLUSDT",
-      "width_pct": 5.918,
-      "volume_ratio": 2.495,
-      "distance_to_resistance_pct": 0.847,
-      "volume_usdt_24h": 6232636.16,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "NVDABUSDT",
-      "width_pct": 1.658,
-      "volume_ratio": 2.47,
-      "distance_to_resistance_pct": 1.479,
-      "volume_usdt_24h": 8770421.7,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "TRXUSDT",
-      "width_pct": 1.241,
-      "volume_ratio": 1.807,
-      "distance_to_resistance_pct": 0.692,
-      "volume_usdt_24h": 31950930.86,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.05,
-      "volume_ratio": 1.643,
-      "distance_to_resistance_pct": 0.05,
-      "volume_usdt_24h": 20773349.35,
+      "symbol": "INJUSDT",
+      "width_pct": 6.279,
+      "volume_ratio": 1.537,
+      "distance_to_resistance_pct": 0.257,
+      "volume_usdt_24h": 9190627.83,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -64,8 +28,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 61,
-      "candidates": 6,
+      "scanned": 64,
+      "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
     },
