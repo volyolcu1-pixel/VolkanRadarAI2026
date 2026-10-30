@@ -1,35 +1,7 @@
 {
-  "updated_at": "2026-10-30T12:42:13.361639+00:00",
+  "updated_at": "2026-10-30T18:38:40.001587+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 1.756,
-      "volume_ratio": 3.121,
-      "distance_to_resistance_pct": 1.674,
-      "volume_usdt_24h": 24523745.13,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "RWUSDUSDT",
-      "width_pct": 0.1,
-      "volume_ratio": 2.438,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 19958257.86,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 1.821,
-      "volume_ratio": 1.907,
-      "distance_to_resistance_pct": 1.707,
-      "volume_usdt_24h": 31861364.15,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -37,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 78,
-      "candidates": 3,
+      "scanned": 67,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
