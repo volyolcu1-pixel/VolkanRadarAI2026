@@ -1,32 +1,32 @@
 {
-  "updated_at": "2026-10-30T00:41:35.820629+00:00",
+  "updated_at": "2026-10-30T06:43:47.723252+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.11,
-      "volume_ratio": 7.793,
-      "distance_to_resistance_pct": 0.0,
-      "volume_usdt_24h": 87300005.88,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
       "symbol": "PAXGUSDT",
-      "width_pct": 1.342,
-      "volume_ratio": 4.049,
-      "distance_to_resistance_pct": 1.299,
-      "volume_usdt_24h": 11580753.52,
+      "width_pct": 1.131,
+      "volume_ratio": 7.418,
+      "distance_to_resistance_pct": 1.021,
+      "volume_usdt_24h": 19689152.23,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "RWUSDUSDT",
       "width_pct": 0.1,
-      "volume_ratio": 3.431,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 12758572.91,
+      "volume_ratio": 2.292,
+      "distance_to_resistance_pct": 0.03,
+      "volume_usdt_24h": 17546305.03,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "WLFIUSDT",
+      "width_pct": 4.44,
+      "volume_ratio": 2.23,
+      "distance_to_resistance_pct": 0.956,
+      "volume_usdt_24h": 8453913.34,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -37,7 +37,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 37,
+      "scanned": 84,
       "candidates": 3,
       "failed_symbols": 0,
       "failure_details": []
