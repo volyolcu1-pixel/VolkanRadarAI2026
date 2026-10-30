@@ -1,50 +1,32 @@
 {
-  "updated_at": "2026-10-29T18:40:57.628820+00:00",
+  "updated_at": "2026-10-30T00:41:35.820629+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "POLUSDT",
-      "width_pct": 4.068,
-      "volume_ratio": 8.693,
-      "distance_to_resistance_pct": 0.15,
-      "volume_usdt_24h": 6645616.4,
+      "symbol": "UUSDT",
+      "width_pct": 0.11,
+      "volume_ratio": 7.793,
+      "distance_to_resistance_pct": 0.0,
+      "volume_usdt_24h": 87300005.88,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "PAXGUSDT",
-      "width_pct": 1.727,
-      "volume_ratio": 4.31,
-      "distance_to_resistance_pct": 1.698,
-      "volume_usdt_24h": 7895960.54,
+      "width_pct": 1.342,
+      "volume_ratio": 4.049,
+      "distance_to_resistance_pct": 1.299,
+      "volume_usdt_24h": 11580753.52,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "BTCUSDT",
-      "width_pct": 2.795,
-      "volume_ratio": 2.192,
-      "distance_to_resistance_pct": 1.317,
-      "volume_usdt_24h": 1268328811.92,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "BCHUSDT",
-      "width_pct": 6.263,
-      "volume_ratio": 1.585,
-      "distance_to_resistance_pct": 1.533,
-      "volume_usdt_24h": 10207132.62,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "BNBUSDT",
-      "width_pct": 3.043,
-      "volume_ratio": 1.578,
-      "distance_to_resistance_pct": 1.979,
-      "volume_usdt_24h": 225868942.55,
+      "symbol": "RWUSDUSDT",
+      "width_pct": 0.1,
+      "volume_ratio": 3.431,
+      "distance_to_resistance_pct": 0.04,
+      "volume_usdt_24h": 12758572.91,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -55,8 +37,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 67,
-      "candidates": 5,
+      "scanned": 37,
+      "candidates": 3,
       "failed_symbols": 0,
       "failure_details": []
     },
