@@ -1,23 +1,59 @@
 {
-  "updated_at": "2026-11-01T18:33:59.996788+00:00",
+  "updated_at": "2026-11-02T00:48:56.655859+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "ARBUSDT",
-      "width_pct": 2.749,
-      "volume_ratio": 3.678,
-      "distance_to_resistance_pct": 1.917,
-      "volume_usdt_24h": 5233763.22,
+      "symbol": "PAXGUSDT",
+      "width_pct": 0.526,
+      "volume_ratio": 2.75,
+      "distance_to_resistance_pct": -0.203,
+      "volume_usdt_24h": 5656867.44,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.1,
-      "volume_ratio": 1.592,
-      "distance_to_resistance_pct": 0.08,
-      "volume_usdt_24h": 17619549.27,
+      "symbol": "ETHUSDT",
+      "width_pct": 1.326,
+      "volume_ratio": 2.265,
+      "distance_to_resistance_pct": 0.118,
+      "volume_usdt_24h": 224001427.19,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "XRPUSDT",
+      "width_pct": 1.367,
+      "volume_ratio": 2.112,
+      "distance_to_resistance_pct": 0.738,
+      "volume_usdt_24h": 39475304.2,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "SNDKBUSDT",
+      "width_pct": 2.41,
+      "volume_ratio": 2.046,
+      "distance_to_resistance_pct": 0.452,
+      "volume_usdt_24h": 7595639.16,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "XAUTUSDT",
+      "width_pct": 0.583,
+      "volume_ratio": 2.025,
+      "distance_to_resistance_pct": -0.308,
+      "volume_usdt_24h": 11356303.11,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "ADAUSDT",
+      "width_pct": 2.02,
+      "volume_ratio": 1.544,
+      "distance_to_resistance_pct": 0.72,
+      "volume_usdt_24h": 7617483.2,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,8 +64,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 36,
-      "candidates": 2,
+      "scanned": 37,
+      "candidates": 6,
       "failed_symbols": 0,
       "failure_details": []
     },
