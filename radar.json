@@ -1,41 +1,50 @@
 {
-  "updated_at": "2026-11-03T12:52:27.909839+00:00",
+  "updated_at": "2026-11-03T18:42:49.137581+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "RWUSDUSDT",
-      "width_pct": 0.09,
-      "volume_ratio": 3.403,
-      "distance_to_resistance_pct": 0.03,
-      "volume_usdt_24h": 33571439.83,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
       "symbol": "PUMPUSDT",
-      "width_pct": 8.363,
-      "volume_ratio": 2.694,
-      "distance_to_resistance_pct": 1.421,
-      "volume_usdt_24h": 10174509.28,
+      "width_pct": 9.974,
+      "volume_ratio": 3.154,
+      "distance_to_resistance_pct": 1.49,
+      "volume_usdt_24h": 13391518.18,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "INJUSDT",
-      "width_pct": 6.555,
-      "volume_ratio": 1.719,
-      "distance_to_resistance_pct": 0.247,
-      "volume_usdt_24h": 8617533.04,
+      "symbol": "NVDABUSDT",
+      "width_pct": 3.533,
+      "volume_ratio": 2.752,
+      "distance_to_resistance_pct": 0.349,
+      "volume_usdt_24h": 15317152.22,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.1,
-      "volume_ratio": 1.694,
-      "distance_to_resistance_pct": 0.02,
-      "volume_usdt_24h": 58843824.95,
+      "symbol": "CRCLBUSDT",
+      "width_pct": 7.152,
+      "volume_ratio": 2.003,
+      "distance_to_resistance_pct": -0.118,
+      "volume_usdt_24h": 14015943.28,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "HYPEUSDT",
+      "width_pct": 6.123,
+      "volume_ratio": 1.734,
+      "distance_to_resistance_pct": 1.695,
+      "volume_usdt_24h": 38244772.22,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "ONDOUSDT",
+      "width_pct": 3.492,
+      "volume_ratio": 1.572,
+      "distance_to_resistance_pct": 0.941,
+      "volume_usdt_24h": 6697544.06,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -47,7 +56,7 @@
     "Spot": {
       "status": "ok",
       "scanned": 50,
-      "candidates": 4,
+      "candidates": 5,
       "failed_symbols": 0,
       "failure_details": []
     },
