@@ -1,32 +1,14 @@
 {
-  "updated_at": "2026-11-05T00:51:49.450095+00:00",
+  "updated_at": "2026-11-05T07:03:37.826859+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "BCHUSDT",
-      "width_pct": 7.313,
-      "volume_ratio": 2.509,
-      "distance_to_resistance_pct": 1.469,
-      "volume_usdt_24h": 9218848.53,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "HBARUSDT",
-      "width_pct": 9.008,
-      "volume_ratio": 1.708,
-      "distance_to_resistance_pct": 1.849,
-      "volume_usdt_24h": 7282846.81,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "DOGEUSDT",
-      "width_pct": 7.836,
-      "volume_ratio": 1.603,
-      "distance_to_resistance_pct": 1.608,
-      "volume_usdt_24h": 46634735.15,
+      "symbol": "XAUTUSDT",
+      "width_pct": 2.998,
+      "volume_ratio": 3.681,
+      "distance_to_resistance_pct": 0.407,
+      "volume_usdt_24h": 48886850.6,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -37,8 +19,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 63,
-      "candidates": 3,
+      "scanned": 60,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
