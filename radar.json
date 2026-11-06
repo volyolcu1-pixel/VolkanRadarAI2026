@@ -1,44 +1,7 @@
 {
-  "updated_at": "2026-11-05T18:46:38.743661+00:00",
+  "updated_at": "2026-11-06T00:53:00.144563+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 2.139,
-      "volume_ratio": 5.904,
-      "distance_to_resistance_pct": 0.908,
-      "volume_usdt_24h": 80147896.11,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "PAXGUSDT",
-      "width_pct": 2.061,
-      "volume_ratio": 3.403,
-      "distance_to_resistance_pct": 0.897,
-      "volume_usdt_24h": 18068341.22,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.11,
-      "volume_ratio": 3.349,
-      "distance_to_resistance_pct": 0.02,
-      "volume_usdt_24h": 61406058.84,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "RWUSDUSDT",
-      "width_pct": 0.16,
-      "volume_ratio": 3.276,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 24925704.33,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -46,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 52,
-      "candidates": 4,
+      "scanned": 57,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
