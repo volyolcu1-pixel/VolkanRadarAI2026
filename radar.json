@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-06T07:01:56.007339+00:00",
+  "updated_at": "2026-11-06T12:52:58.823200+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
       "symbol": "RWUSDUSDT",
       "width_pct": 0.16,
-      "volume_ratio": 1.615,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 33700922.89,
+      "volume_ratio": 2.337,
+      "distance_to_resistance_pct": 0.03,
+      "volume_usdt_24h": 35715646.88,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -19,7 +19,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 56,
+      "scanned": 65,
       "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
