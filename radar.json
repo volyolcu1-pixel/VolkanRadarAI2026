@@ -1,26 +1,7 @@
 {
-  "updated_at": "2026-11-06T18:44:58.820674+00:00",
+  "updated_at": "2026-11-07T00:49:11.221098+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "SPCXBUSDT",
-      "width_pct": 8.61,
-      "volume_ratio": 1.733,
-      "distance_to_resistance_pct": 1.182,
-      "volume_usdt_24h": 51913640.29,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "AAVEUSDT",
-      "width_pct": 5.655,
-      "volume_ratio": 1.632,
-      "distance_to_resistance_pct": 1.387,
-      "volume_usdt_24h": 17950556.7,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -28,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 57,
-      "candidates": 2,
+      "scanned": 55,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
