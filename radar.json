@@ -1,22 +1,23 @@
 {
-  "updated_at": "2026-11-07T18:34:51.406484+00:00",
-  "status": "partial",
+  "updated_at": "2026-11-08T00:49:00.894498+00:00",
+  "status": "ok",
   "candidates": [],
-  "errors": [
-    "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
-  ],
+  "errors": [],
   "risk_filters_verified": false,
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 34,
+      "scanned": 32,
       "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
     "Futures": {
-      "status": "error",
-      "message": "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
+      "status": "ok",
+      "scanned": 100,
+      "candidates": 0,
+      "failed_symbols": 0,
+      "failure_details": []
     }
   }
 }
