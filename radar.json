@@ -1,23 +1,32 @@
 {
-  "updated_at": "2026-11-08T00:49:00.894498+00:00",
-  "status": "ok",
-  "candidates": [],
-  "errors": [],
+  "updated_at": "2026-11-08T06:48:32.613636+00:00",
+  "status": "partial",
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "XAUTUSDT",
+      "width_pct": 0.194,
+      "volume_ratio": 1.719,
+      "distance_to_resistance_pct": 0.155,
+      "volume_usdt_24h": 23203066.89,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
+  "errors": [
+    "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
+  ],
   "risk_filters_verified": false,
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 32,
-      "candidates": 0,
+      "scanned": 34,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
     "Futures": {
-      "status": "ok",
-      "scanned": 100,
-      "candidates": 0,
-      "failed_symbols": 0,
-      "failure_details": []
+      "status": "error",
+      "message": "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
     }
   }
 }
