@@ -1,50 +1,41 @@
 {
-  "updated_at": "2026-11-09T00:51:46.873430+00:00",
+  "updated_at": "2026-11-09T07:15:46.517228+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "BTCUSDT",
-      "width_pct": 3.594,
-      "volume_ratio": 7.561,
-      "distance_to_resistance_pct": 1.77,
-      "volume_usdt_24h": 758070145.8,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
       "symbol": "SPCXBUSDT",
-      "width_pct": 2.038,
-      "volume_ratio": 6.884,
-      "distance_to_resistance_pct": 0.765,
-      "volume_usdt_24h": 5267480.85,
+      "width_pct": 3.648,
+      "volume_ratio": 23.081,
+      "distance_to_resistance_pct": 1.823,
+      "volume_usdt_24h": 16506525.54,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "PAXGUSDT",
-      "width_pct": 0.905,
-      "volume_ratio": 5.474,
-      "distance_to_resistance_pct": 0.432,
-      "volume_usdt_24h": 6751929.9,
+      "width_pct": 2.228,
+      "volume_ratio": 4.614,
+      "distance_to_resistance_pct": 0.599,
+      "volume_usdt_24h": 10257826.94,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "ARBUSDT",
+      "width_pct": 8.933,
+      "volume_ratio": 3.959,
+      "distance_to_resistance_pct": 1.598,
+      "volume_usdt_24h": 13454331.29,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "TRXUSDT",
-      "width_pct": 0.595,
-      "volume_ratio": 3.018,
-      "distance_to_resistance_pct": 0.498,
-      "volume_usdt_24h": 13319351.06,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 0.77,
-      "volume_ratio": 2.633,
-      "distance_to_resistance_pct": 0.378,
-      "volume_usdt_24h": 27277413.29,
+      "width_pct": 1.388,
+      "volume_ratio": 3.042,
+      "distance_to_resistance_pct": 1.246,
+      "volume_usdt_24h": 18028200.82,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -55,8 +46,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 45,
-      "candidates": 5,
+      "scanned": 47,
+      "candidates": 4,
       "failed_symbols": 0,
       "failure_details": []
     },
