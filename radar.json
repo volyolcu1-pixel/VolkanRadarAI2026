@@ -1,7 +1,62 @@
 {
-  "updated_at": "2026-11-11T06:59:31.894033+00:00",
+  "updated_at": "2026-11-11T12:55:52.768635+00:00",
   "status": "partial",
-  "candidates": [],
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "XPLUSDT",
+      "width_pct": 6.84,
+      "volume_ratio": 2.668,
+      "distance_to_resistance_pct": 0.221,
+      "volume_usdt_24h": 5885191.37,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "INTCBUSDT",
+      "width_pct": 8.339,
+      "volume_ratio": 2.563,
+      "distance_to_resistance_pct": -0.113,
+      "volume_usdt_24h": 11711983.26,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "XLMUSDT",
+      "width_pct": 5.735,
+      "volume_ratio": 2.499,
+      "distance_to_resistance_pct": 0.737,
+      "volume_usdt_24h": 8554935.34,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "MUBUSDT",
+      "width_pct": 9.772,
+      "volume_ratio": 2.416,
+      "distance_to_resistance_pct": 0.637,
+      "volume_usdt_24h": 23775913.05,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "NEARUSDT",
+      "width_pct": 8.476,
+      "volume_ratio": 2.052,
+      "distance_to_resistance_pct": -0.584,
+      "volume_usdt_24h": 111357300.45,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "NVDABUSDT",
+      "width_pct": 7.311,
+      "volume_ratio": 1.548,
+      "distance_to_resistance_pct": 1.576,
+      "volume_usdt_24h": 81109647.53,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -9,8 +64,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 57,
-      "candidates": 0,
+      "scanned": 53,
+      "candidates": 6,
       "failed_symbols": 0,
       "failure_details": []
     },
