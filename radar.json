@@ -1,41 +1,14 @@
 {
-  "updated_at": "2026-11-10T18:42:01.686517+00:00",
+  "updated_at": "2026-11-11T00:49:23.728919+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "TRXUSDT",
-      "width_pct": 1.227,
-      "volume_ratio": 2.447,
-      "distance_to_resistance_pct": 0.842,
-      "volume_usdt_24h": 25084210.1,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "GRAMUSDT",
-      "width_pct": 8.789,
-      "volume_ratio": 2.41,
-      "distance_to_resistance_pct": 0.624,
-      "volume_usdt_24h": 17785466.54,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "GOOGLBUSDT",
-      "width_pct": 2.195,
-      "volume_ratio": 1.94,
-      "distance_to_resistance_pct": 1.92,
-      "volume_usdt_24h": 9461226.49,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.05,
-      "volume_ratio": 1.5,
-      "distance_to_resistance_pct": 0.05,
-      "volume_usdt_24h": 17337474.2,
+      "symbol": "ICPUSDT",
+      "width_pct": 8.485,
+      "volume_ratio": 5.328,
+      "distance_to_resistance_pct": 0.275,
+      "volume_usdt_24h": 5111685.42,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -46,8 +19,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 55,
-      "candidates": 4,
+      "scanned": 59,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
