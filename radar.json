@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-12T07:03:56.184243+00:00",
+  "updated_at": "2026-11-12T12:57:57.024789+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
-      "symbol": "GOOGLBUSDT",
-      "width_pct": 2.547,
-      "volume_ratio": 2.122,
-      "distance_to_resistance_pct": 0.932,
-      "volume_usdt_24h": 15443502.44,
+      "symbol": "ASTERUSDT",
+      "width_pct": 3.242,
+      "volume_ratio": 8.137,
+      "distance_to_resistance_pct": 1.351,
+      "volume_usdt_24h": 12722002.42,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "QQQBUSDT",
-      "width_pct": 1.943,
-      "volume_ratio": 1.79,
-      "distance_to_resistance_pct": 1.7,
-      "volume_usdt_24h": 11374525.48,
+      "symbol": "GRAMUSDT",
+      "width_pct": 7.903,
+      "volume_ratio": 1.516,
+      "distance_to_resistance_pct": 1.352,
+      "volume_usdt_24h": 24172970.04,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
