@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-12T00:58:27.682241+00:00",
+  "updated_at": "2026-11-12T07:03:56.184243+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
       "symbol": "GOOGLBUSDT",
-      "width_pct": 2.879,
-      "volume_ratio": 4.328,
-      "distance_to_resistance_pct": 1.195,
-      "volume_usdt_24h": 11973114.88,
+      "width_pct": 2.547,
+      "volume_ratio": 2.122,
+      "distance_to_resistance_pct": 0.932,
+      "volume_usdt_24h": 15443502.44,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
       "symbol": "QQQBUSDT",
-      "width_pct": 2.65,
-      "volume_ratio": 1.856,
-      "distance_to_resistance_pct": 1.665,
-      "volume_usdt_24h": 9689168.64,
+      "width_pct": 1.943,
+      "volume_ratio": 1.79,
+      "distance_to_resistance_pct": 1.7,
+      "volume_usdt_24h": 11374525.48,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,7 +28,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 54,
+      "scanned": 55,
       "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
