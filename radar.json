@@ -1,35 +1,7 @@
 {
-  "updated_at": "2026-11-13T18:44:32.919845+00:00",
+  "updated_at": "2026-11-14T00:49:47.690042+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "TAOUSDT",
-      "width_pct": 7.66,
-      "volume_ratio": 2.096,
-      "distance_to_resistance_pct": 1.427,
-      "volume_usdt_24h": 20423658.06,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XLMUSDT",
-      "width_pct": 6.402,
-      "volume_ratio": 1.772,
-      "distance_to_resistance_pct": 1.461,
-      "volume_usdt_24h": 11313395.1,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.04,
-      "volume_ratio": 1.558,
-      "distance_to_resistance_pct": 0.03,
-      "volume_usdt_24h": 35016690.58,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -37,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 56,
-      "candidates": 3,
+      "scanned": 54,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
