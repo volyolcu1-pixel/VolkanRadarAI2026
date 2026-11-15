@@ -1,23 +1,23 @@
 {
-  "updated_at": "2026-11-15T05:33:43.160748+00:00",
+  "updated_at": "2026-11-15T13:40:10.947004+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
       "symbol": "RWUSDUSDT",
-      "width_pct": 0.12,
-      "volume_ratio": 2.897,
+      "width_pct": 0.2,
+      "volume_ratio": 7.172,
       "distance_to_resistance_pct": 0.01,
-      "volume_usdt_24h": 26988510.02,
+      "volume_usdt_24h": 36672117.47,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     },
     {
       "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.05,
-      "volume_ratio": 1.79,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 32746249.38,
+      "symbol": "TRXUSDT",
+      "width_pct": 2.604,
+      "volume_ratio": 1.538,
+      "distance_to_resistance_pct": 1.853,
+      "volume_usdt_24h": 38374400.16,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,7 +28,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 52,
+      "scanned": 63,
       "candidates": 2,
       "failed_symbols": 0,
       "failure_details": []
