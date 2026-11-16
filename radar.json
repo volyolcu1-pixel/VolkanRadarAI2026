@@ -1,35 +1,7 @@
 {
-  "updated_at": "2026-11-16T05:32:59.641445+00:00",
+  "updated_at": "2026-11-16T15:12:51.554725+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "QQQBUSDT",
-      "width_pct": 2.141,
-      "volume_ratio": 8.588,
-      "distance_to_resistance_pct": 1.398,
-      "volume_usdt_24h": 11303345.37,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "SPCXBUSDT",
-      "width_pct": 2.694,
-      "volume_ratio": 5.791,
-      "distance_to_resistance_pct": 0.491,
-      "volume_usdt_24h": 20861430.0,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "GOOGLBUSDT",
-      "width_pct": 2.447,
-      "volume_ratio": 2.465,
-      "distance_to_resistance_pct": 1.34,
-      "volume_usdt_24h": 10494491.52,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -37,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 59,
-      "candidates": 3,
+      "scanned": 56,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
