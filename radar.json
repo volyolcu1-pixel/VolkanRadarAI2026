@@ -1,7 +1,80 @@
 {
-  "updated_at": "2026-11-17T01:43:59.127145+00:00",
+  "updated_at": "2026-11-17T15:41:41.939423+00:00",
   "status": "partial",
-  "candidates": [],
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "BCHUSDT",
+      "width_pct": 4.539,
+      "volume_ratio": 5.214,
+      "distance_to_resistance_pct": 1.076,
+      "volume_usdt_24h": 5974365.27,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "RWUSDUSDT",
+      "width_pct": 0.1,
+      "volume_ratio": 2.93,
+      "distance_to_resistance_pct": 0.07,
+      "volume_usdt_24h": 20803281.32,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "UUSDT",
+      "width_pct": 0.06,
+      "volume_ratio": 2.151,
+      "distance_to_resistance_pct": 0.0,
+      "volume_usdt_24h": 23458034.18,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "HBARUSDT",
+      "width_pct": 4.31,
+      "volume_ratio": 1.992,
+      "distance_to_resistance_pct": 1.327,
+      "volume_usdt_24h": 5313442.34,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "UNIUSDT",
+      "width_pct": 7.811,
+      "volume_ratio": 1.924,
+      "distance_to_resistance_pct": 1.173,
+      "volume_usdt_24h": 28802717.4,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "LINKUSDT",
+      "width_pct": 3.957,
+      "volume_ratio": 1.877,
+      "distance_to_resistance_pct": 0.514,
+      "volume_usdt_24h": 12173129.19,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "SPCXBUSDT",
+      "width_pct": 4.434,
+      "volume_ratio": 1.685,
+      "distance_to_resistance_pct": -0.879,
+      "volume_usdt_24h": 38396867.37,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "SUIUSDT",
+      "width_pct": 4.694,
+      "volume_ratio": 1.644,
+      "distance_to_resistance_pct": 0.943,
+      "volume_usdt_24h": 16636741.61,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -9,8 +82,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 52,
-      "candidates": 0,
+      "scanned": 53,
+      "candidates": 8,
       "failed_symbols": 0,
       "failure_details": []
     },
