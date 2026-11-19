@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-18T15:21:02.209763+00:00",
+  "updated_at": "2026-11-19T00:01:55.934639+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "XLMUSDT",
-      "width_pct": 4.993,
-      "volume_ratio": 1.885,
-      "distance_to_resistance_pct": 1.821,
-      "volume_usdt_24h": 5632826.98,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -19,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 54,
-      "candidates": 1,
+      "scanned": 49,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
