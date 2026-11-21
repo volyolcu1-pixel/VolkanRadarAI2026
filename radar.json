@@ -1,23 +1,14 @@
 {
-  "updated_at": "2026-11-21T06:14:33.995600+00:00",
+  "updated_at": "2026-11-21T18:52:27.332626+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
       "symbol": "RWUSDUSDT",
-      "width_pct": 0.02,
-      "volume_ratio": 8.375,
-      "distance_to_resistance_pct": 0.0,
-      "volume_usdt_24h": 35642989.84,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "UUSDT",
-      "width_pct": 0.07,
-      "volume_ratio": 3.5,
-      "distance_to_resistance_pct": 0.04,
-      "volume_usdt_24h": 55531521.31,
+      "width_pct": 0.03,
+      "volume_ratio": 4.982,
+      "distance_to_resistance_pct": 0.02,
+      "volume_usdt_24h": 54032922.69,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -28,11 +19,11 @@
   "markets": {
     "Spot": {
       "status": "partial",
-      "scanned": 26,
-      "candidates": 2,
+      "scanned": 63,
+      "candidates": 1,
       "failed_symbols": 1,
       "failure_details": [
-        "Spot ANTBUSDT: yetersiz mum (37/73)"
+        "Spot ANTBUSDT: yetersiz mum (49/73)"
       ]
     },
     "Futures": {
