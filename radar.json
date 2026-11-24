@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-24T09:02:31.802981+00:00",
+  "updated_at": "2026-11-24T22:05:26.162314+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "GOOGLBUSDT",
-      "width_pct": 4.118,
-      "volume_ratio": 1.932,
-      "distance_to_resistance_pct": 1.525,
-      "volume_usdt_24h": 14139155.56,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -19,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 64,
-      "candidates": 1,
+      "scanned": 44,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
