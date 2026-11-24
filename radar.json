@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-11-23T23:35:49.448661+00:00",
+  "updated_at": "2026-11-24T09:02:31.802981+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
       "symbol": "GOOGLBUSDT",
-      "width_pct": 4.846,
-      "volume_ratio": 1.901,
-      "distance_to_resistance_pct": 0.126,
-      "volume_usdt_24h": 13798862.71,
+      "width_pct": 4.118,
+      "volume_ratio": 1.932,
+      "distance_to_resistance_pct": 1.525,
+      "volume_usdt_24h": 14139155.56,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -19,7 +19,7 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 62,
+      "scanned": 64,
       "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
