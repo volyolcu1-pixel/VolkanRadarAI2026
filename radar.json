@@ -1,7 +1,17 @@
 {
-  "updated_at": "2026-11-24T22:05:26.162314+00:00",
+  "updated_at": "2026-11-25T07:41:05.040966+00:00",
   "status": "partial",
-  "candidates": [],
+  "candidates": [
+    {
+      "market": "Spot",
+      "symbol": "UUSDT",
+      "width_pct": 0.12,
+      "volume_ratio": 2.478,
+      "distance_to_resistance_pct": 0.09,
+      "volume_usdt_24h": 61786214.98,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    }
+  ],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -9,8 +19,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 44,
-      "candidates": 0,
+      "scanned": 42,
+      "candidates": 1,
       "failed_symbols": 0,
       "failure_details": []
     },
