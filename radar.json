@@ -1,35 +1,7 @@
 {
-  "updated_at": "2026-11-26T07:30:34.862856+00:00",
+  "updated_at": "2026-11-26T21:08:15.775414+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "ADAUSDT",
-      "width_pct": 9.73,
-      "volume_ratio": 1.657,
-      "distance_to_resistance_pct": 1.333,
-      "volume_usdt_24h": 22255480.92,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "QNTUSDT",
-      "width_pct": 9.23,
-      "volume_ratio": 1.64,
-      "distance_to_resistance_pct": 0.309,
-      "volume_usdt_24h": 8063099.02,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    },
-    {
-      "market": "Spot",
-      "symbol": "XAUTUSDT",
-      "width_pct": 4.997,
-      "volume_ratio": 1.581,
-      "distance_to_resistance_pct": 1.048,
-      "volume_usdt_24h": 34689267.79,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -37,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 56,
-      "candidates": 3,
+      "scanned": 42,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
