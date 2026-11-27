@@ -1,14 +1,59 @@
 {
-  "updated_at": "2026-11-27T07:28:10.226367+00:00",
+  "updated_at": "2026-11-27T20:52:06.965693+00:00",
   "status": "partial",
   "candidates": [
     {
       "market": "Spot",
+      "symbol": "XAUTUSDT",
+      "width_pct": 3.301,
+      "volume_ratio": 7.402,
+      "distance_to_resistance_pct": 0.769,
+      "volume_usdt_24h": 30723806.11,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "QQQBUSDT",
+      "width_pct": 2.583,
+      "volume_ratio": 2.469,
+      "distance_to_resistance_pct": 0.427,
+      "volume_usdt_24h": 7607644.59,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "SPCXBUSDT",
+      "width_pct": 3.844,
+      "volume_ratio": 2.373,
+      "distance_to_resistance_pct": 1.407,
+      "volume_usdt_24h": 14180931.76,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
       "symbol": "SKHYBUSDT",
-      "width_pct": 8.396,
-      "volume_ratio": 12.12,
-      "distance_to_resistance_pct": 1.713,
-      "volume_usdt_24h": 14199897.07,
+      "width_pct": 9.073,
+      "volume_ratio": 2.069,
+      "distance_to_resistance_pct": 1.208,
+      "volume_usdt_24h": 25173333.09,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "PAXGUSDT",
+      "width_pct": 3.318,
+      "volume_ratio": 1.826,
+      "distance_to_resistance_pct": 0.719,
+      "volume_usdt_24h": 14273244.16,
+      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
+    },
+    {
+      "market": "Spot",
+      "symbol": "GRAMUSDT",
+      "width_pct": 5.847,
+      "volume_ratio": 1.505,
+      "distance_to_resistance_pct": 1.879,
+      "volume_usdt_24h": 6552096.72,
       "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
     }
   ],
@@ -19,8 +64,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 43,
-      "candidates": 1,
+      "scanned": 53,
+      "candidates": 6,
       "failed_symbols": 0,
       "failure_details": []
     },
