@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-28T06:57:39.361466+00:00",
+  "updated_at": "2026-11-28T19:43:13.786328+00:00",
   "status": "partial",
-  "candidates": [
-    {
-      "market": "Spot",
-      "symbol": "RWUSDUSDT",
-      "width_pct": 0.02,
-      "volume_ratio": 3.918,
-      "distance_to_resistance_pct": 0.0,
-      "volume_usdt_24h": 25187476.01,
-      "risk_status": "Seed/Monitoring/delist kontrol edilmedi"
-    }
-  ],
+  "candidates": [],
   "errors": [
     "Futures taramasi basarisiz: 451 Client Error:  for url: https://fapi.binance.com/fapi/v1/exchangeInfo"
   ],
@@ -19,8 +9,8 @@
   "markets": {
     "Spot": {
       "status": "ok",
-      "scanned": 55,
-      "candidates": 1,
+      "scanned": 31,
+      "candidates": 0,
       "failed_symbols": 0,
       "failure_details": []
     },
